@@ -25,14 +25,14 @@ public class wk7_HW {
 		int [] userChoice = new int [100];
 		int [] compChoice = new int [100];
 		
-		int choice = 0;
+		int choice = 1;
 		int scorecard;
 		
 	//	int choice = 0;
 		
-		while (choice == 0){
+		while (choice == 1){
 		
-			tries++;
+			
 			
 		
 			
@@ -40,8 +40,8 @@ public class wk7_HW {
 	
 	
 		int num = Integer.parseInt(JOptionPane.showInputDialog("Guess a Number!"));
-		userChoice[tries-1] = num;
-		compChoice[tries -1] = computerNum;
+		userChoice[tries] = num;
+		compChoice[tries] = computerNum;
 			
 	//	System.out.println(computerNum);
 		
@@ -51,31 +51,31 @@ public class wk7_HW {
 		if (computerNum < num)
 		{	
 			JOptionPane.showMessageDialog(null,"Your guess is too large!");
-			userWins[tries -1]=0;
-			compWins[tries -1]=1;
+			userWins[tries]=0;
+			compWins[tries]=1;
 		}
 	  
 		else if (computerNum > num)
 		{	
 			JOptionPane.showMessageDialog(null,"Your guess is too small!");
-			userWins[tries -1]=0;
-			compWins[tries -1]=1;
+			userWins[tries]=0;
+			compWins[tries]=1;
 		}
 		
 		else
 		{	
 			JOptionPane.showMessageDialog(null,"You got it! Good guess!");
-			userWins[tries -1]=1;
-			compWins[tries -1]=0;
+			userWins[tries]=1;
+			compWins[tries]=0;
 		}
 		
-		tries++;
+		//tries++;
 		
-		choice = Integer.parseInt(JOptionPane.showInputDialog("Do you want to keep playing? 0 for yes, 1 for no"));
+		choice = Integer.parseInt(JOptionPane.showInputDialog("Do you want to keep playing? 1 for yes, 0 for no"));
 		
-		scorecard =  Integer.parseInt(JOptionPane.showInputDialog("Do you want to see the scorecard? 0 for yes, 1 for no"));
+		scorecard =  Integer.parseInt(JOptionPane.showInputDialog("Do you want to see the scorecard? 1 for yes, 0 for no"));
 		
-			while (scorecard == 0)
+			if (scorecard == 1)
 			{	
 				int wins=0;
 				int loses=0;
@@ -101,7 +101,10 @@ public class wk7_HW {
 				}
 				
 				scorecard =1;
+				
 			}
+			
+			tries++;
 	
 		}
 	  }
