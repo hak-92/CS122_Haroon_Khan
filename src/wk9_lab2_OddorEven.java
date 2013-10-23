@@ -5,8 +5,8 @@ public class wk9_lab2_OddorEven {
 	
 	private int m_val;
 	
-	public String even;
-	public String odd;
+//	public String even;
+	//public String odd;
 	
 	public void setval( int val)
 	{
