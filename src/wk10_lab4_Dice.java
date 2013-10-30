@@ -6,6 +6,7 @@ public class wk10_lab4_Dice {
 	
 	 static int dnum;
 	 
+	 
 		
 	public static void OneThrow()
 	{
