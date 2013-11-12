@@ -79,3 +79,5 @@ public class wk11_HW_test {
 	}
 }
 }
+
+// Acceptable, but if this is a TrippleDice, there is no need to pass in the number of dices.
