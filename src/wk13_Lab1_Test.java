@@ -6,32 +6,28 @@ public class wk13_Lab1_Test {
 		
 	
 	
-	wk13_Lab1_GenNum[] Hist = new wk13_Lab1_GenNum[2];
-
+	wk13_Lab1_GenNum[] InterfaceObjects = new wk13_Lab1_GenNum[2];
 	wk13_Lab1_Dice dice = new wk13_Lab1_Dice();
 	wk13_Lab1_Card card = new wk13_Lab1_Card();
 	
-	Hist[0] = dice;
-	Hist [1] =card;
+	InterfaceObjects[0] = dice;
+	InterfaceObjects[1] = card;
 	
-	int turns = 0;
 	
-	int [] history = new int [100];
+
 	
-	for (wk13_Lab1_GenNum i : Hist)
+	for (wk13_Lab1_GenNum i : InterfaceObjects)
 	{
 		int num = i.generate();
-		System.out.println(" The number is: " + num);
-		history[turns]= num;
-		turns++;
-	}
-	
-	for (int i = 0; i < turns; i++){
-		System.out.println(" The History number is: " + history[i]);
-	}
-	
+		System.out.println(" The  number is: " + num);
 		
+		System.out.println("  History is: ");
 		
+		System.out.println(i.GetHistory());
+		
+	
+		}
+
 	
 	
 	
