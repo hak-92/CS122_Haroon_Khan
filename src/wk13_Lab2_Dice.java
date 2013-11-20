@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 
 
-public class wk13_Lab1_Dice implements wk13_Lab1_GenNum{
+public class wk13_Lab2_Dice implements wk13_Lab2_GenNum{
 	
 	int num;
+	int turns =1;
+	
+	 Exception myException = new ArithmeticException("More than three turns");
 	
 	ArrayList<Integer> hist = new ArrayList<Integer>();
 	
@@ -11,10 +14,31 @@ public class wk13_Lab1_Dice implements wk13_Lab1_GenNum{
 	@Override
 	public int generate() {
 		
+		try{
+		
 		num =  (int) ((Math.random() * (6 - 1)) + 1);
 		
 		hist.add(num);
-		return num;
+		
+		if(turns >3){
+		throw new Exception();
+	
+		}
+	
+		}
+		
+		catch( Exception exception){
+			
+			System.err.println("More than three turns");
+			
+			
+		}
+		
+		finally{
+			turns ++;
+			return num;
+			
+		}
 	}
 
 
@@ -30,6 +54,7 @@ public class wk13_Lab1_Dice implements wk13_Lab1_GenNum{
 		
 		return history;
 	}
+	
 	
 	
 

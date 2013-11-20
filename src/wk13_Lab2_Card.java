@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 
-public class wk13_Lab1_Card implements wk13_Lab1_GenNum{
+public class wk13_Lab2_Card implements wk13_Lab2_GenNum{
 	
 	int cardnum;
 	
