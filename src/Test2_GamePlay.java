@@ -81,3 +81,5 @@ public class Test2_GamePlay {
 		}
 }
 }
+
+// History should be part of the Dice class(es) ..and your ToString overloading is off...it generates another random number
