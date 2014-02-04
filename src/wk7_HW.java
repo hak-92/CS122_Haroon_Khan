@@ -111,3 +111,5 @@ public class wk7_HW {
 	
 
 }
+
+//Please fix the extra  0 0 display, and also use 1 for yes and 0 for no
